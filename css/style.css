@@ -1,0 +1,403 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background{
+    background-image: linear-gradient(to right, #314755, #26a0da);
+    background-clip: border-box;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.side-navbar{
+    position: fixed !important;
+    top: 0px;
+    z-index: 100;
+    background-image: linear-gradient(to right, #314755, #26a0da);
+    display: flex;
+    height: 75px;
+    width: 100%;
+    transition: height 0.5s linear;
+}
+
+.sec-1{
+    width: 20%;
+}
+
+.sec-2{
+    width: 60%;
+    text-align: center !important;
+}
+
+.sec-3{
+    width: 20%;
+    text-align: center;
+}
+
+.nav-icon{
+    margin: 25px 0 0 20px;
+}
+
+.nav-icon label{
+    display: inline-block;
+}
+
+.bars{
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    width: 40px;
+    margin-bottom: 8px;
+    transition: all 0.5s linear;
+}
+
+.logo-dubai{
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+    line-height: 45px;
+}
+
+.logo-painting{
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+    line-height: 20px;
+}
+
+.sec-3 a{
+    position: relative;
+    top: 25px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+.sec-3 a:hover{
+    color: rgb(223, 223, 223);
+}
+
+.side-section{
+    position: relative;
+    top: 85px;
+    z-index: 20;
+    height: 90vh !important;
+    background-color: transparent;
+    position: fixed;
+    left: -30%;
+    width: 30%;
+    box-sizing: border-box;
+    transition: left 0.5s linear;
+}
+
+.side-section ul{
+    list-style: none;
+    margin-top: 50px;
+    padding: 0px;
+    position: relative;
+    left: 20px;
+}
+
+.menu-heading{
+    color: white;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+
+.side-section ul li{
+    margin-bottom: 20px;
+}
+
+.side-section ul li a{
+    color: white;
+    padding: 0px;
+    transition: all 0.2s linear;
+}
+
+.side-section ul li a:hover{
+    color: rgb(219, 216, 216);
+    padding: 5px;
+    text-decoration: none;
+}
+
+.abt-us{
+    height: 150px;
+}
+
+.abt-us span , .abt-us p{
+    color: white;
+} 
+
+.abt-us span{
+    font-size: 35px;
+    border-bottom: 2px solid white;
+    margin-bottom: 5px;
+}
+
+#navbtn:checked ~ .side-section{
+    left: 0%;
+    z-index: 20;
+}
+
+#navbtn:checked ~ .side-navbar{
+    height: 100px;
+}
+
+#navbtn:checked ~ .side-navbar .bars{
+    position: absolute;
+    margin: 0 0 0 0;
+    transition: all 0.5s linear;
+}
+
+#navbtn:checked ~ .side-navbar label{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: relative !important;
+    top: -20px;
+}
+
+#navbtn:checked ~ .side-navbar label div{
+    position: absolute;
+    top: 20px;
+}
+
+#navbtn:checked ~ .side-navbar .bar-2{
+    display: none;
+}
+
+#navbtn:checked ~ .side-navbar .bar-1{
+    transform: rotate(-45deg);
+}
+
+#navbtn:checked ~ .side-navbar .bar-3{
+    transform: rotate(45deg);
+}
+
+#navbtn:checked ~ .side-navbar .nav-icon{
+    margin-top: 30px !important;
+    position: relative;
+}
+
+.box{
+    background-image: linear-gradient(to right, #314755, #26a0da);
+    position: fixed;
+    bottom: -10vh;
+    height: 10vh !important;
+    width: 100%;
+    transition: bottom 0.5s linear;
+    z-index: 45;
+}
+
+#navbtn:checked ~ .box{
+    left: 0%;
+    bottom: 0vh;
+}
+
+.contact-section i{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.website-main{
+    width: 100%;
+    float: right;
+    height: 100vh !important;
+    margin-top: 75px !important;
+    padding-bottom: 10vh;
+    transition: all 0.5s linear;
+}
+
+#navbtn:checked ~ .website-main{
+    width: 70%;
+    margin-top: 100px !important;
+}
+
+.gap-10vh{
+    height: 10vh;
+    width: 100%;
+}
+
+#navbtn:checked ~ .gap-10vh{
+    width: 70%;
+}
+
+.side-social-icon{
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.zoom-img{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 250px;
+}
+
+.our-services-section img{
+    transition: all 0.5s linear;
+}
+
+.our-services-section img:hover{
+    transform: scale(1.1);
+}
+
+.black-bg{
+    background-color: #1B1B1B;
+}
+
+.bottom-icons{
+    color: white;
+    margin-right: 25px;
+}
+
+.bottom-icons:hover{
+    color: rgb(211, 208, 208);
+    text-decoration: none;
+}
+
+.pages-list ul li{
+    list-style: square;
+    color: white;
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid grey;
+}
+
+.pages-list ul li a{
+    color: white;
+}
+
+.pages-list ul li a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+
+    .side-navbar label{
+        position: relative;
+        left: -15px;
+    }
+
+    #navbtn:checked ~ .side-navbar label{
+        position: relative !important;
+        top: -20px;
+    }
+
+    #navbtn:checked ~ .side-navbar label div{
+        top: 20px;
+    }
+
+    .side-social-icon{
+        display: block;
+        padding-left: 35% !important;
+        padding-top: 25px !important;
+    }
+
+    .side-social-icon a{
+        margin-left: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .side-social-icon a:hover{
+        color: rgb(236, 234, 234);
+        text-decoration: none;
+    }
+
+    .box{
+        display: none;
+    }
+
+    .website-main{
+        margin-bottom: 0px !important;
+        width: 100% !important;
+        margin-top: 70px !important;
+    }
+
+    #navbtn:checked ~ .website-main{
+        margin-top: 70px !important;
+    }
+
+    .side-navbar{
+        height: 70px !important;
+        background-image: linear-gradient(to left, #314755, #26a0da) !important;
+    }
+
+    #navbtn:checked ~ .side-navbar{
+        height: 70px !important;
+    }
+
+    .side-section{
+        position: fixed !important;
+        top: 70px !important;
+        left: -100% !important;
+        width: 100% !important;
+        background-image: linear-gradient(to left, #314755, #26a0da) !important;
+        height: 100% !important;
+    }
+
+    #navbtn:checked ~ .side-section{
+        left: 0 !important;
+    }
+
+    .abt-us{
+        margin-top: 20px;
+    }
+
+    .background{
+        display: none !important;
+    }
+
+    .logo-dubai{
+        font-size: 2.5rem;
+    }
+
+    .logo-painting{
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+
+    .nav-icon{
+        margin: 20px 0 0 20px;
+    }
+
+    #navbtn:checked ~ .side-navbar .nav-icon{
+        margin-top: 30px !important;
+    }
+
+    .bars{
+        width: 35px;
+    }
+
+    .sec-1{
+        width: 10%;
+    }
+
+    .sec-2{
+        width: 90%;
+    }
+
+    .sec-3{
+        display: none;
+    }
+
+    .my-background-color{
+        background-image: linear-gradient(to left, #314755, #26a0da) !important;
+    }
+    
+} 
+
